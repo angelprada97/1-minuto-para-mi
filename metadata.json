@@ -1,0 +1,6 @@
+{
+  "name": "1 minuto para mí",
+  "description": "Pausas activas de 60 segundos, estiramiento, descanso visual y respiración guiada para el personal de turno del Hospital Universitario del Valle (HUV).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

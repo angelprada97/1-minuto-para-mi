@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Calming Japanese Seigaiha / Zen Ripple geometric pattern for relaxation */
+  .bg-pattern-zen-calm {
+    background-color: #f7faf9;
+    background-image: radial-gradient(circle at 100% 150%, #f7faf9 24%, #e3ece8 25%, #e3ece8 28%, #f7faf9 29%, #f7faf9 36%, #e3ece8 37%, #e3ece8 40%, transparent 40%, transparent),
+      radial-gradient(circle at 0 150%, #f7faf9 24%, #e3ece8 25%, #e3ece8 28%, #f7faf9 29%, #f7faf9 36%, #e3ece8 37%, #e3ece8 40%, transparent 40%, transparent),
+      radial-gradient(circle at 50% 100%, #e3ece8 10%, #f7faf9 11%, #f7faf9 23%, #e3ece8 24%, #e3ece8 30%, #f7faf9 31%, #f7faf9 43%, #e3ece8 44%, #e3ece8 50%, transparent 50%, transparent),
+      radial-gradient(circle at 100% 50%, #f7faf9 5%, #e3ece8 6%, #e3ece8 15%, #f7faf9 16%, #f7faf9 20%, #e3ece8 21%, #e3ece8 30%, transparent 30%, transparent),
+      radial-gradient(circle at 0 50%, #f7faf9 5%, #e3ece8 6%, #e3ece8 15%, #f7faf9 16%, #f7faf9 20%, #e3ece8 21%, #e3ece8 30%, transparent 30%, transparent);
+    background-size: 80px 40px;
+  }
+
+  .dark .bg-pattern-zen-calm {
+    background-color: #0b1514;
+    background-image: radial-gradient(circle at 100% 150%, #0b1514 24%, #142825 25%, #142825 28%, #0b1514 29%, #0b1514 36%, #142825 37%, #142825 40%, transparent 40%, transparent),
+      radial-gradient(circle at 0 150%, #0b1514 24%, #142825 25%, #142825 28%, #0b1514 29%, #0b1514 36%, #142825 37%, #142825 40%, transparent 40%, transparent),
+      radial-gradient(circle at 50% 100%, #142825 10%, #0b1514 11%, #0b1514 23%, #142825 24%, #142825 30%, #0b1514 31%, #0b1514 43%, #142825 44%, #142825 50%, transparent 50%, transparent),
+      radial-gradient(circle at 100% 50%, #0b1514 5%, #142825 6%, #142825 15%, #0b1514 16%, #0b1514 20%, #142825 21%, #142825 30%, transparent 30%, transparent),
+      radial-gradient(circle at 0 50%, #0b1514 5%, #142825 6%, #142825 15%, #0b1514 16%, #0b1514 20%, #142825 21%, #142825 30%, transparent 30%, transparent);
+    background-size: 80px 40px;
+  }
+
+  /* Gentle organic ripples / waves pattern for hero and cards */
+  .bg-pattern-waves {
+    background-image: radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.04) 0%, transparent 60%);
+  }
+
+  /* Calming breathing glow animation */
+  @keyframes breathe-slow {
+    0%, 100% {
+      opacity: 0.35;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.65;
+      transform: scale(1.08);
+    }
+  }
+
+  .animate-breathe-slow {
+    animation: breathe-slow 9s ease-in-out infinite;
+  }
+}
